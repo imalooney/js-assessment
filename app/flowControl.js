@@ -11,8 +11,7 @@ define(function() {
       //
       // otherwise the function should return the number, or false if no number
       // was provided or the value provided is not a number
-      num = num || false;
-      if ( typeof(num) !== 'number') {
+      if ( isNaN(num) ) {
         return false;
       }
       else if ( num%3 === 0 && num%5 === 0 ) {
