@@ -12,7 +12,7 @@ define(function() {
         var total = 0;
         var exp = 0;
         for ( var i=0; i<str.length; i++ ) {
-            var asInt = parseInt(str[i]);
+            var asInt = parseInt(str[i], 10);
             var subtotal = asInt*( Math.pow(2, exp ));
             total = total + subtotal;
             exp = exp + 1;
